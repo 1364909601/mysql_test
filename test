@@ -1,0 +1,49 @@
+-- 选取数据
+select col_1, col_2 
+from table_1;
+
+-- 返回一列当中每一个不同的值
+select distinct col_1 
+from table_1;
+
+
+
+-- 限制返回n行数
+select col_1
+from table_1 
+limit n;
+
+-- 从第n行开始，检索m行
+select col_1
+from table_1
+limit n,m;
+
+-- 完全限制
+table_1.col_1
+database_1.table_1;
+
+-- 排序
+select col_1
+from table_1
+order by col_1;
+
+select col_1, col_2, col_3
+from table_1
+order by col_1, col_2;
+
+/* 排序方式（升序、降序）
+ASC：升序（默认，不需要单独设置）
+DESC：降序(位于col_name之后) */
+select col_1, col_2, col_3
+from table_1
+order by col_1 DESC, col_2;
+-- DESC仅作用在col_1列，并不作用在col_2列当中（即col_2列按照升序排序）
+
+
+-- 混合使用，仅显示最高的一个
+select col_1
+from table_1
+order by col_1 DESC
+limit 1;
+
+
