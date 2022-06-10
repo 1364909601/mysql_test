@@ -16,3 +16,4 @@ where Year(col_date) = 2005 AND Month(col_date) = 9;
 
 数值处理函数
 Abs() Cos() Exp() Mod() Pi() Rand() Sin() Sqrt() Tan()
+*/
