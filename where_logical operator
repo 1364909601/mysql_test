@@ -1,0 +1,27 @@
+/* 
+=   <   >   >=   <=   <>   !=
+BETWEEN n AND m   ([n,m])
+IS NULL
+IS NOT NULL
+*/
+
+select col_1,col_2
+from table_1
+where limit_1 = condition_1;
+
+select col_1, col_2
+from table_1
+where limit_1 = condition_1 OR|AND limit_2 = condition_2;
+
+-- IN operator
+
+select col_1, col_2
+from table_1
+where limit_1 IN (m,n)
+order by col_1;
+
+select col_1, col_2
+from table_1
+where limit_1 NOT IN (m,n)
+order by col_1;
+
