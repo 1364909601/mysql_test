@@ -1,0 +1,15 @@
+/*
+"%"通配符
+%jet%：包含jet的词
+%jet：以jet结尾的词
+jet%：以jet开头的词
+*/
+
+select col_1, col_2
+from table_1
+where col_2 LIKE 'jet%';
+
+/*
+"_"通配符
+与"%"类似，但是只匹配单个字符而不是多个字符
+*/
