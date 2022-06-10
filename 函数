@@ -1,0 +1,18 @@
+/*
+文本处理函数 
+RTrim() LTrim() Upper() Lower() Length() Left() Right() SubString() Soundex()
+
+日期和时间处理函数
+AddDate() AddTime() CurDate() CurTime() Date() DateDiff() Date_Add() Date_Format() Day()
+DayOfWeek() Hour() Minute() Month() Now() Second() Time() Year()
+-- 仅提取列的日期部分，对于其他忽略(宽松匹配)
+where Date(col_date) = '2005-09-01';
+--仅匹配列中是否为2005-09-01，符合即返回结果，不符合跳过(严格匹配)
+where col_date = '2005-09-01'; 
+-- 匹配2005年9月份所有数据
+where Date(col_date) BETWEEN '2005-09-01' AND '2005-09-30';
+或者
+where Year(col_date) = 2005 AND Month(col_date) = 9;
+
+数值处理函数
+Abs() Cos() Exp() Mod() Pi() Rand() Sin() Sqrt() Tan()
