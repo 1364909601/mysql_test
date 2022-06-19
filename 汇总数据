@@ -1,0 +1,10 @@
+-- Aggregate function : AVG() COUNT() MAX() MIN() SUM()
+SELECT COUNT(*) AS num_itmes,
+       MIN(col) AS min_col,
+       MAX(col) AS max_col,
+       AVG(col) AS avg_col
+FROM table;
+
+-- DISTINCT
+SELECT DISTINCT col AS Dist_col
+FROM table;
