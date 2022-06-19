@@ -1,1 +1,13 @@
+-- CONCAT
+SELECT Concat(col1, ' (', col2, ')') AS con_col
+FROM col
+ORDER BY col1;
 
+--RTrim
+SELECT Concat(RTrim(col1, ' (', RTrim(col2), ')') AS con_col
+FROM col
+ORDER BY col1;
+
+-- computition
+SELECT price, count, price*count AS all_income,
+FROM col;
