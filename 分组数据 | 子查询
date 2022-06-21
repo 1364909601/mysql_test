@@ -1,0 +1,4 @@
+-- GROUP BY
+-- WHERE在数据分组前进行过滤，HAVING在数据分组后进行过滤，WHERE排除的行不包括在分组中
+-- GROUP BY 与 ORDER BY 组合使用
+-- 多个SELECT语句组合，形成子查询进行筛选，在WHERE子句中使用子查询能够编写出功能很强并且很灵活的SQL语句
