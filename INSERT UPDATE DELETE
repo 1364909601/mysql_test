@@ -1,0 +1,25 @@
+-- INSERT
+INSERT INTO table_name(col1, col2, col3)
+VALUES
+('col1_content1', 'col2_content1', 'col3_content1'),
+('col1_content2', 'col2_content2', 'col3_content2'),
+('col1_content3', 'col2_content3', 'col3_content3');
+
+-- INSERT SELECT
+INSERT INTO table_1(col1, col2, col3)
+SELECT col_1, col_2, col_3
+FROM table_2;
+
+-- UPDATE语句要注意最后添加WHERE语句限定更新范围，否则更新所有行
+UPDATE table
+SET col_1 = 'new content1',
+    col_2 = 'new content 2'
+WHERE col_limitation =  condition;
+-- 使用UPDATR删除值，设置为NULL
+UPDATE table
+SET col = NULL
+WHERE col_limitation = condidtion;
+
+-- DELETE  !!不要省略WHERE语句，否则删除所有行
+DELETE FROM table
+WHERE col_limitation = condition;
