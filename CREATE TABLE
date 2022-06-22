@@ -1,0 +1,50 @@
+-- CREATE TABLE
+-- 设置一个主键
+CREATE TABLE table_name(
+col_id int NOT NULL,
+col_name char(50) NOT NULL,
+col_tel char(15),
+col_city varchar(30),
+PRIMARY KEY (col_id)
+);
+--设置两个主键，列名用逗号“,”隔开
+CREATE TABLE table_name(
+col_id int NOT NULL,
+col_name char(50) NOT NULL,
+col_tel char(15),
+col_city varchar(30),
+PRIMARY KEY (col_id, col_name)
+);
+
+-- AUTO_INCREMENT:每当增加一行时自动增量
+CREATE TABLE table_name(
+col_id int NOT NULL AUTO_INCREMENT,
+col_name char(50) NOT NULL,
+col_tel char(15),
+col_city varchar(30),
+PRIMARY KEY (col_id)
+);
+
+DEFAULT number:指定number为默认值
+CREATE TABLE table_name(
+col_id int NOT NULL AUTO_INCREMENT,
+col_name char(50) NOT NULL,
+col_tel char(8) DEFAULT 00000000,
+col_city varchar(30),
+PRIMARY KEY (col_id)
+);
+
+-- ENGINE:设定数据库引擎
+/*
+InnoDB：可靠的事务处理引擎，不支持全文本搜索；
+MEMORY：功能上等同MyISAM，但是数据存储在内存中，速度很快（适合于临时表）
+MyISAM：性能极高，支持全文本搜索，但不支持事务处理
+*/
+CREATE TABLE table_name(
+col_id int NOT NULL AUTO_INCREMENT,
+col_name char(50) NOT NULL,
+col_tel char(8) DEFAULT 00000000,
+col_city varchar(30),
+PRIMARY KEY (col_id)
+)ENGINE=InnoDB;
+
