@@ -1,0 +1,18 @@
+-- Append one column
+ALTER TABLE table_name
+ADD col_name CHAR(4);
+
+-- Drop one column
+ALTER TABLE table_name
+DROP COLUMN col_name;
+
+-- Delete table
+DROP TABLE table_name;
+
+--RENAME table
+RENAME TABLE table_name TO table_new_name;
+
+RENAME TABLE table_name_1 TO table_new_name_1,
+             table_name_2 TO table_new_name_2,
+             table_name_3 TO table_new_name_3;
+
